@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 16px;
+    text-align: center;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Títulos: el tamaño se adapta al ancho de la pantalla */
+h1 {
+    font-size: clamp(1.6rem, 7vw, 2.4rem);
+    margin: 0.5em 0;
+}
+
+h2 {
+    font-size: clamp(1.3rem, 5.5vw, 1.8rem);
+    margin: 0.5em 0;
+}
+
+h3 {
+    font-size: clamp(1rem, 4.5vw, 1.3rem);
+    font-weight: normal;
+    margin: 0.5em 0;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 1.5em 0 0.5em;
+}
+
+.boton {
+    display: block;
+    padding: 16px;
+    margin: 12px 0 24px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: inherit;
+    min-height: 48px; /* tamaño cómodo para tocar con el dedo */
+}
+
+.boton:active {
+    background: #eee;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 12px auto;
+    border-radius: 8px;
+}
+
+/* Pantallas muy pequeñas */
+@media (max-width: 360px) {
+    body {
+        padding: 12px;
+    }
+
+    .boton {
+        padding: 14px;
+        font-size: 1rem;
+    }
+}
+
+/* Pantallas grandes (ordenador) */
+@media (min-width: 768px) {
+    body {
+        padding: 40px 20px;
+    }
+
+    .boton:hover {
+        background: #eee;
+    }
+}
